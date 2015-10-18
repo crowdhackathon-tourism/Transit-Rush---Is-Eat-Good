@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>is eat good</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+    <style type="text/css">
+        .nopadding {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+    </style>
+
+    <script type="text/javascript">        
+        $(document).ready(function () {
+            $("#hidden-div").hide();
+
+            var myVar = setInterval(myTimer, 10000);
+
+            function myTimer() {
+                var d = new Date();
+                $("#hidden-div").show();
+            }
+
+        });
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="nopadding navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><strong>is eat good</strong></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Jamie Oliver</a></li>
+                            <img src="img/user.jpg" style="width:60px;height:60px;" class="img-responsive img-circle center-block margin-bottom-20" />
+
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="row">
+            <!--sidebar-left-->
+            <div class="col-md-5">
+
+
+
+                <div class="row">
+
+
+                    <div style="margin-top:10px;" class="col-lg-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Go!</button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+
+
+
+                <div id="hidden-div" style="margin-top:10px;" class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <img src="img/NEW.png" class="img-responsive" width="10%" style="float:right;margin-top: -17px;margin-right: -5px; padding:0;" />
+                            <div class="col-sm-1">
+                                <span class="label label-success">19</span>
+                            </div>
+                            <div class="col-sm-8">
+                                <h4>
+                                    <a href="#" onclick="gotomap(38.0310477, 23.7637818, 'Zepelin Cafe', content('Zepelin Cafe', magazia[4]));">Zepelin Cafe
+                                        <br><small>Αττικό Άλσος Γαλατσίου</small></a></h4>
+                                <h5>Marina B. <small>Now</small></h5>
+                                Η καλύτερη μπακέτα που βρίσκεις στην αγορά
+                            </div>
+                            <div class="col-sm-3" style="position:relative; float:right;"><img src="img/polyspori-turkey.png" class="img-responsive" /></div>
+                            <br />
+
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:10px;" class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <span class="label label-success">15</span>
+                            </div>
+                            <div class="col-sm-8">
+                                <h4><a href="#" onclick="gotomap(37.98, 23.72, 'Ταβέρνα Κληματαριά', content('Κληματαριά', magazia[0]));">Ταβέρνα Κληματαριά<br><small>Pl. Theatrou 2, Athina 105 52</small></a></h4>
+                                
+                                <h5>Francesco Alberti <small>6 months ago</small></h5>
+                                Tipica taverna consigliatissima per assaporare i sapori dell'autentica cucina greca. 
+                                    Staff cordiale e gentile.
+                                
+                            </div>
+                            <div class="col-sm-3"><img src="img/mpiftekia_me_patates_sto_fourno_5.jpg" class="img-responsive" /></div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <span class="label label-warning">5</span>
+                            </div>
+                            <div class="col-sm-8">
+                                <h4><a href="#" onclick="gotomap(37.98, 23.75, 'Ταβέρνα Παπαγιάνης', content('Παπαγιάνης', magazia[1]));">ΤΑΒΕΡΝΑ - ΕΣΤΙΑΤΟΡΙΟ ΠΑΠΑΓΙΑΝΝΗΣ<br><small>Papadiamantopoulou 53, Zografou</small></a></h4>
+                                
+                                <h5>Marina B. <small>September 13</small></h5>
+                                Best Pastitsio ever in town. I will definitely go to taste their yummies!
+                            </div>
+                            <div class="col-sm-3"><img src="img/pastitsio.jpg" class="img-responsive" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <span class="label label-success">19</span>
+                            </div>
+                            <div class="col-sm-8">
+                                <h4><a href="#" onclick="gotomap(38.0175235, 23.7953654, 'El Taco Bueno', content('El Taco Bueno', magazia[2]));">El taco Bueno</a><br />
+                                    <small>Psaron 1, Chalandri</small></a></h4>
+                                <h5>Thomas B.<small>September 13</small></h5>
+                            Φανταστικό Μεξικάνικο στο Χαλάνδρι. 
+
+                            </div>
+                            <div class="col-sm-3"><img src="img/mpiftekia_me_patates_sto_fourno_5.jpg" class="img-responsive" /></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <span class="label label-warning">5</span>
+                            </div>
+                            <div class="col-sm-8">
+                                <h4><a href="#" onclick="gotomap(37.9868075, 23.7567554, 'Taj Mahal Oriental', content('Taj Mahal Oriental', magazia[3]));">Taj Mahal Oriental</a><br/><small>Leof. Alexandras 192, Athina 115 21</small></h4>
+                                <h5>Kostas<small>Last night</small></h5>
+                                Spaghetti with garlic and chilies is amazing. Also, the roasted potatoes with salsa bianco.
+                            </div>
+                            <div class="col-sm-3"><img src="img/papoutsakia.jpg" class="img-responsive" /></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-7" id="map"></div>
+        </div>
+    </div>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBklaHsAOR5Qu1qqjgppMc6I_0s2R6Kx70&callback=initMap"
+            async defer></script>
+
+    <script src="js/locations.js"></script>
+
+    <script src="js/geolocationmarker-compiled.js"></script>
+
+    <script src="js/content.js"></script>
+
+
+</body>
+</html>
